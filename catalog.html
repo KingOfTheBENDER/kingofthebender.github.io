@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Nёrds магазин</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="main-header">
+    <nav class="main-navigation container">
+        <a class="main-header-logo">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
+        </a>
+        <ul class="site-navigation">
+            <li class="site-navigation-item"><a href="index.html">Студия</a></li>
+            <li class="site-navigation-item"><a href="#">Клиенты</a></li>
+            <li class="site-navigation-current"><a href="#">Магазин</a></li>
+            <li class="site-navigation-item"><a href="#">Контакты</a></li>
+
+        </ul>
+        <ul class="user-navigation">
+            <li class="bascet-link"><a href="#">Корзина</a></li>
+        </ul>
+    </nav>
+    <h2 class="catalog-head">Магазин готовых шаблонов</h2>
+</header>
+
+<main class="container flex">
+    <section class="filtres">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" method="get">
+            <fieldset class="filter-group">
+                <legend class="visually-hidden">Стоимость:</legend>
+
+            </fieldset>
+            <fieldset class="filter-group">
+                <legend>Сетка:</legend>
+                <ul>
+                    <li class="filter-radio">
+                        <label for="filter-adapt" >
+                            <input id="filter-adapt" class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-group" value="adapt">
+                            <span class="checkbox-radio"></span>
+                            Адаптивная
+                        </label>
+                    </li>
+                    <li class="filter-radio">
+                        <label for="filter-fix" >
+                            <input id="filter-fix" class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-group" value="fix" checked>
+                            <span class="checkbox-radio"></span>
+                            Фиксированная
+                        </label>
+                    </li>
+                    <li class="filter-radio">
+                        <label for="filter-rub" >
+                            <input id="filter-rub" class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-group" value="rub">
+                            <span class="checkbox-radio"></span>
+                            Резиновая
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="filter-group">
+                <legend>Особенности:</legend>
+                <ul>
+                    <li class="filter-option">
+                        <label for="filter-slider-item">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked id="filter-slider-item">
+                            <span class="checkbox-indicator"></span>
+                            Слайдер
+                        </label>
+                    </li>
+                    <li class="filter-option">
+                        <label for="filter-block-item">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block"  id="filter-block-item">
+                            <span class="checkbox-indicator"></span>
+                            Блок преимуществ
+                        </label>
+                    </li>
+                    <li class="filter-option">
+                        <label for="filter-news-item">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked id="filter-news-item">
+                            <span class="checkbox-indicator"></span>
+                            Новости
+                        </label>
+                    </li>
+                    <li class="filter-option">
+                        <label for="filter-gallery-item">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery"  id="filter-gallery-item">
+                            <span class="checkbox-indicator"></span>
+                            Галерея
+                        </label>
+                    </li>
+                    <li class="filter-option">
+                        <label for="filter-bascet-item">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bascet"  id="filter-bascet-item">
+                            <span class="checkbox-indicator"></span>
+                            Корзина
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button class="filter-button button" type="submit">Показать</button>
+        </form>
+    </section>
+    <section class="catalog">
+        <div class="catalog-items">
+            <div class="item-card">
+                <img src="img/img-sedona.jpg" width="360" height="576">
+                <div class="card-inner">
+                    <h3>Sedona</h3>
+                    <p>Информационный сайт<br> для туристов</p>
+                    <a href="#" class="button">9900 РУБ.</a>
+                </div>
+            </div>
+            <div class="item-card">
+                <img src="img/img-pink.jpg" width="360" height="576">
+                <div class="card-inner">
+                    <h3>Pink app</h3>
+                    <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+                    <a href="#" class="button">9900 РУБ.</a>
+                </div>
+            </div>
+            <div class="item-card">
+                <img src="img/img-barbershop.jpg" width="360" height="576">
+                <div class="card-inner">
+                    <h3>Barbershop</h3>
+                    <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+                    <a href="#" class="button">9900 РУБ.</a>
+                </div>
+            </div>
+            <div class="item-card">
+                <img src="img/img-mishka.jpg" width="360" height="576">
+                <div class="card-inner">
+                    <h3>Mishka</h3>
+                    <p>Интернет магазин<br> вязаных игрушек</p>
+                    <a href="#" class="button">9900 РУБ.</a>
+                </div>
+            </div>
+            <div class="item-card">
+                <img src="img/img-aplus.jpg" width="360" height="576">
+                <div class="card-inner">
+                    <h3>A Plus</h3>
+                    <p>Лендинг курсов повышения<br> квалификации</p>
+                    <a href="#" class="button">9900 РУБ.</a>
+                </div>
+            </div>
+            <div class="item-card">
+                <img src="img/img-kvast.jpg" width="360" height="576">
+                <div class="card-inner">
+                    <h3>Кваст</h3>
+                    <p>Промо-сайт производителя<br> крафтового кваса</p>
+                    <a href="#" class="button">9900 РУБ.</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<div class="container">
+    <div class="map">
+    <div class="over-map">
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="button button-map">Напишите нам</a>
+    </div>
+</div>
+</div>
+
+<footer class="main-footer container">
+    <div class="footer-social">
+        <a class="social-button social-vk" href="#" title="Вконтакте"></a>
+        <a class="social-button social-fb" href="#" title="Facebook"></a>
+        <a class="social-button social-in" href="#" title="Instagram"></a>
+    </div>
+    <div>
+        <h2>Давайте дружить, это выгодно!</h2>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
+    </div>
+</footer>
+</body>
+</html>
